@@ -1,0 +1,113 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.root{
+    --gw:16px;
+
+}
+.container{
+    max-width :1320px ;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--gw);
+    padding-right: var(--gw);
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1* var(--gw));
+    margin-right: calc(-1* var(--gw));
+}
+.col-1{
+    width: 8.3333%;
+}
+.col-2{
+    width: 16.6666%;
+}
+.col-3{
+    width: 25%;
+}
+.col-4{
+    width: 33.3333%;
+}
+.col-5{
+    width: 41.6666%;
+}
+.col-6{
+    width: 50%;
+}
+.col-7{
+    width: 58.3333%;
+}
+.col-8{
+    width: 66.6666%;
+}
+.col-9{
+    width: 75%;
+}
+.col-10{
+    width: 83.3333%;
+}
+.col-11{
+    width: 91.6666%;
+}
+.col-12{
+    width: 100%;
+}
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12{
+    padding-left: var(--gw);
+    padding-right: var(--gw);
+} 
+.py-120{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.row-30{
+    gap: 30px;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.box{
+    background-color: rgb(160, 132, 132);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 30px 20px;
+    /* margin:auto 20px ; */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+}
+.icon{
+    color:blue;
+    margin-bottom:15px;
+}
+.box img{
+    width: 50px;
+}
+h2{
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+}
+p{
+    margin-bottom: 20px;
+    color: rgb(46, 6, 46);
+
+}
+.service{
+    width: 100%;
+    position: relative;
+    display: flex;
+    padding-top: 120px;
+}
+.box p{
+    margin-top: 50;
+    font-size: 24px;
+    font-weight: 800;
+    color: aqua;
+}
