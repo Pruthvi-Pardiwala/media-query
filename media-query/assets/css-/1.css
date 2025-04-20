@@ -1,23 +1,23 @@
-*{
-    margin: 0%;
-    padding: 0%;
+* {
+    margin: 0;
+    box-sizing: border-box;
 }
-.root{
-    --gw:16px;
-
-}
-.container{
-    max-width :1320px ;
+.container {
+    max-width: 1320px;
     margin-left: auto;
     margin-right: auto;
     padding-left: var(--gw);
     padding-right: var(--gw);
 }
-.row{
+:root {
+    --gw: 15px;
+}
+.row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: calc(-1* var(--gw));
-    margin-right: calc(-1* var(--gw));
+    margin-left: calc(-1 * var(--gw));
+    margin-right: calc(-1 * var(--gw));
+
 }
 .col-1{
     width: 8.3333%;
@@ -55,16 +55,16 @@
 .col-12{
     width: 100%;
 }
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12{
+.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12 {
     padding-left: var(--gw);
     padding-right: var(--gw);
-} 
+}
 .py-120{
     padding-top: 120px;
     padding-bottom: 120px;
 }
-.row-30{
-    gap: 30px;
+.row-gap{
+    row-gap: 20px;
 }
 .justify-center{
     justify-content: center;
@@ -72,42 +72,41 @@
 .justify-between{
     justify-content: space-between;
 }
-.box{
+.item-center{
+    align-items: center;
+}
+.justify-end {
+    justify-content: flex-end;
+}
+.review {
+    padding: 60px 0;
+    background-color: #ffffff;
+}
+
+.review-box {
     background-color: rgb(160, 132, 132);
     border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 30px 20px;
-    /* margin:auto 20px ; */
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    max-width: 300px;
+    min-height: 350px;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+}
 
+.review-box:hover {
+    transform: translatey(5px);
 }
-.icon{
-    color:blue;
-    margin-bottom:15px;
-}
-.box img{
-    width: 50px;
-}
-h2{
-    margin-bottom: 10px;
-    font-size: 22px;
-    color: rgb(0, 0, 0);
+
+.review-box  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 p{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    font-size: 22px;
     color: rgb(46, 6, 46);
-
-}
-.service{
-    width: 100%;
-    position: relative;
-    display: flex;
-    padding-top: 120px;
-}
-.box p{
-    margin-top: 50;
-    font-size: 24px;
-    font-weight: 800;
-    color: aqua;
 }
